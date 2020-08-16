@@ -1,0 +1,345 @@
+
+h1 {
+	display: inline;
+  position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+  color: rgba(0,0,255,0.5); 
+  text-align: center;
+}
+
+.header1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.header2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 34px;
+  letter-spacing: 0.5px;
+  color: rgb(247, 44, 44);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pwhen {
+  font-family: Helvetica, Sans-Serif;
+  font-size: 24px;
+  text-align: center;
+  background: rgb(247, 156, 19, 0.9);
+  padding: 15px;
+}
+
+.pwhen2 {
+  font-family: Helvetica, Sans-Serif;
+  font-size: 24px;
+  text-align: center;
+  background: rgb(247, 156, 19, 0.9);
+  padding: 15px;
+  text-align: left;
+  padding-left: 35px;
+  /* margin: 0px; */
+}
+
+.ptable {
+  font-family: Helvetica, Sans-Serif;
+  font-size: 24px;
+  height: auto;
+}
+
+/* h1:after {
+	/* content: "SCRUM BOARD"; */
+	/* position: absolute; left: 10px; top: 5px;
+	color: rgba(255,0,0,0.5);   
+}  */
+
+body {
+    background-color:#222;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(60px auto);
+    /* grid-gap: 0.5em; */
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.box1 {
+    grid-column: 1;
+    grid-row: 1;
+    background: rgb(247, 156, 19, 0.9);
+    position: fixed;
+    width: 100%;
+    /* padding: 1em; */
+}
+
+/* Navigation Bar */
+.box2 {
+    grid-column: 2/3;
+    grid-row: 1;
+    background: rgb(247, 156, 19, 0.9);
+    position: fixed;
+    width: 100%;
+    /* padding: 1em; */
+}
+
+/* Navigation bar */
+.box3 {
+    grid-column: 1/5;
+    grid-row: 2;
+    height: 18700px;
+    width: 100%;
+    /* margin-top: 8px; */
+    background-color: rgb(248, 248, 250);
+    margin-top: 73px;
+}
+
+.box3b {
+    grid-column: 1/5;
+    grid-row: 2;
+    height: 2800px;
+    width: 100%;
+    margin-top: 8px;
+    background-color: rgb(248, 248, 250);
+    margin-top: 73px;
+}
+
+/* Content */
+.box4 {
+    grid-column: 1/5;
+    grid-row: 4;
+    height: 60px;
+    background: rgb(247, 156, 19, 0.9);
+    padding-left: 20px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin-right: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 5px;
+    position: relative;
+}
+
+nav a {
+    color: rgb(000, 000, 000);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+nav a::before{
+    /* content: ''; */
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+  } 
+
+.current{
+    color: rgb(255, 255, 255);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .class {
+      position: fixed;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-top: 80px;
+    padding-left: 100px
+  }
+
+
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 400px;
+    width: 300px;
+    padding-left: 130px;
+  }
+
+  .column h2{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 300px;
+    text-align: center;
+    margin-left: 130px;
+    background-color: orange;
+    color: rgb(252, 252, 252);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 8px;
+  }
+
+  .column h3{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    width: 300px;
+    text-align: center;
+    margin-left: 130px;
+    background-color: rgb(255, 193, 23);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(252, 252, 252);
+    padding-top: 8px;
+  }
+
+  .column p{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 300px;
+    text-align: center;
+    margin-left: 130px;
+    background-color: orange;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+
+  .background{
+    background: rgb(247, 156, 19, 0.9);
+    width: 70%;
+  }
+  
+  
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  table {
+    border: none;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+  } 
+  
+  tr:nth-child(even) {
+    background-color: rgb(15, 137, 250);
+    text-align: center;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(180, 195, 204);
+    text-align: center;
+  }
+
+  th{
+    /* border: 1px solid black; */
+    font-size: large;
+    /* background: rgb(11, 110, 238); */
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  
+  td {
+    /* border: 1px solid black; */
+    font-size: large;
+    
+  }
+
+  table.a {
+    table-layout: auto;
+    width: 1200px;  
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 100px;
+  }
+
+  .down {
+    margin-top: 100px;
+  }
+
+  .right {
+    margin-left: 70px;
+  }
+
+ .img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  padding-top: 50px;
+ }
+
+ .img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  height: 400px;
+  padding-top: 50px;
+ }
+
+ .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
